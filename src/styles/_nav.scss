@@ -1,0 +1,35 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border: 2px solid rgb(65 65 65);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+
+    span {
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      background-color: rgb(65 65 65);
+      color: wheat;
+    }
+  }
+}
+
+@media (max-width: 50em) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}

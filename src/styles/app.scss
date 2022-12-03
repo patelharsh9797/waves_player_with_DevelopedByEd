@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Scrollbar styling
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(50, 50, 50);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  transition: all 0.3s linear;
+}
+
+.library-active {
+  margin-left: 15%;
+}
+
+@media (max-width: 50em) {
+  .library-active {
+    margin: 0;
+  }
+}
+@import "./nav";
+@import "./song";
+@import "./player";
+@import "./library";
